@@ -1,19 +1,30 @@
-// tuple
-let person:[number, string, boolean]=[ 2, 'brad', true];
-// tupple Array
-let employee:[number, string][];
-employee=[
-    [1, "lucky"],
-    [2, "me"],
-    [3, "i"]
-]
+// type assertion : changing type from the initial Declaration
+let cid:any=1;
+// let customerId=<number>cid;
+// console.log(cid);
+let customerId=cid as number;
+function addN(x:number, y:number):number{
+    return x + y
+}
 
-// union
+console.log(addN(4,21));
 
-let pid:string|number= 484;
-let ppid:string|number="number four";
-ppid=45;
-console.log(ppid);
+// tuple 
+// let person:[number, string, boolean]=[ 2, 'brad', true];
+// // tupple Array
+// let employee:[number, string][];
+// employee=[
+//     [1, "lucky"],
+//     [2, "me"],
+//     [3, "i"]
+// ]
+
+// // union
+
+// let pid:string|number= 484;
+// let ppid:string|number="number four";
+// ppid=45;
+// console.log(ppid);
 
 // basic types
 
