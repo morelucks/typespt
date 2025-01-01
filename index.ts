@@ -1,13 +1,40 @@
-// type assertion : changing type from the initial Declaration
-let cid:any=1;
-// let customerId=<number>cid;
-// console.log(cid);
-let customerId=cid as number;
-function addN(x:number, y:number):number{
-    return x + y
+
+// custom type 
+type User ={
+    id:number
+    name:string
 }
 
-console.log(addN(4,21));
+let user:User={
+    id:4,    name:'john'
+}
+ console.log(user);
+
+//  function 
+function loggs(message:string|number) :void{
+    console.log(message);
+}
+// loggs("this looks good");
+// enum
+enum items{
+    fruits="mango",
+    cars="benz",
+    phone="ted",
+}
+console.log(items)
+
+ 
+
+// // type assertion : changing type from the initial Declaration
+// let cid:any=1;
+// // let customerId=<number>cid;
+// // console.log(cid);
+// let customerId=cid as number;
+// function addN(x:number, y:number):number{
+//     return x + y
+// }
+
+// console.log(addN(4,21));
 
 // tuple 
 // let person:[number, string, boolean]=[ 2, 'brad', true];
