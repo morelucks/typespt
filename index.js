@@ -1,20 +1,40 @@
 "use strict";
-let user = {
-    id: 4, name: 'john'
+const user1 = {
+    id: 4,
+    name: 'john doe',
+    age: 60,
+    favorite: 'milk'
 };
-console.log(user);
-function loggs(message) {
-    console.log(message);
-}
-// loggs("this looks good");
-// enum
-var items;
-(function (items) {
-    items["fruits"] = "mango";
-    items["cars"] = "benz";
-    items["phone"] = "ted";
-})(items || (items = {}));
-console.log(items);
+const user2 = {
+    id: 9,
+    name: 'faithful '
+};
+user1.id = 9;
+console.log(user1);
+console.log(user2);
+let x = user2.favorite;
+console.log(x);
+// // custom type 
+// type User ={
+//     id:number
+//     name:string
+// }
+// let user:User={
+//     id:4,    name:'john'
+// }
+//  console.log(user);
+// //  function 
+// function loggs(message:string|number) :void{
+//     console.log(message);
+// }
+// // loggs("this looks good");
+// // enum
+// enum items{
+//     fruits="mango",
+//     cars="benz",
+//     phone="ted",
+// }
+// console.log(items)
 // // type assertion : changing type from the initial Declaration
 // let cid:any=1;
 // // let customerId=<number>cid;

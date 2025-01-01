@@ -1,27 +1,56 @@
-
-// custom type 
-type User ={
+//== interface ==//
+//== interface is similar to custom type: interfaces doest not have union of types but custom types does, interface can have a ? which means optional if you do not include a defind variant ==//
+interface UserInterface{
     id:number
     name:string
+    age?:number
+    favorite?:string
+}
+ 
+const user1 : UserInterface={
+    id:4,
+    name:'john doe',
+    age:60,
+    favorite:'milk'
+
+
 }
 
-let user:User={
-    id:4,    name:'john'
+const user2:UserInterface={
+    id:9,
+    name:'faithful '
 }
- console.log(user);
+user1.id=9;
 
-//  function 
-function loggs(message:string|number) :void{
-    console.log(message);
-}
-// loggs("this looks good");
-// enum
-enum items{
-    fruits="mango",
-    cars="benz",
-    phone="ted",
-}
-console.log(items)
+console.log(user1);
+console.log(user2);
+let x=user2.favorite;
+console.log(x)
+ 
+
+// // custom type 
+// type User ={
+//     id:number
+//     name:string
+// }
+
+// let user:User={
+//     id:4,    name:'john'
+// }
+//  console.log(user);
+
+// //  function 
+// function loggs(message:string|number) :void{
+//     console.log(message);
+// }
+// // loggs("this looks good");
+// // enum
+// enum items{
+//     fruits="mango",
+//     cars="benz",
+//     phone="ted",
+// }
+// console.log(items)
 
  
 
